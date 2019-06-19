@@ -1,6 +1,7 @@
 /*eslint-env browser*/
 
 var startButton = document.querySelector('p + div');
+var tooltip = document.querySelector('body > p');
 var intro = document.querySelector('body > div > div');
 var gradient = document.querySelector('body > div');
 var body = document.querySelector('body');
@@ -38,6 +39,7 @@ var hideIntro = function() {
     body.classList.remove('originalImage');
     aside.style.right = "-150px";
     asideButton.style.right = "0px";
+    tooltip.style.top = "20px";
 }
 
 startButton.addEventListener('click', hideIntro);
@@ -45,6 +47,7 @@ startButton.addEventListener('click', hideIntro);
 var openAside = function() {
     aside.classList.toggle('openAside');
     asideButton.classList.toggle('openButton');
+    tooltip.style.opacity = "0";
 }
 
 asideButton.addEventListener('click', openAside);
@@ -58,6 +61,7 @@ var dragDivOne = function() {
     asideDivOne.classList.add('invisible');
     jassenPlaceholder.classList.add('blinking');
     asidePOne.classList.add('invisible');
+    tooltip.style.display = "none";
 }
 
 asideDivOne.addEventListener('drag', dragDivOne);
