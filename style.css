@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Khula', sans-serif;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 body > p {
     position: fixed;
     margin: 0 auto;
-    top: -60px;
+    top: -65px;
     left: 0;
     right: 0;
     width: 450px;
@@ -21,9 +22,9 @@ body > p {
     background-color: rgba(56,56,81,.9);
     border-radius: 10px;
     color: white;
-    font-family: Gilroy;
     opacity: 1;
     transition: top 1s ease, opacity .5s ease;
+    line-height: 22px;
 }
 
 .originalImage {
@@ -102,6 +103,7 @@ article > article {
     margin-top: 50px;
     opacity: 0;
     transition: opacity 1.2s ease;
+    line-height: 21px;
 }
 
 .articleZichtbaar {
@@ -114,7 +116,7 @@ article > article:nth-of-type(3) {
 }
 
 article > article:nth-of-type(3) p {
-    height: 160px;
+    height: 158px;
     overflow-y: scroll;
 }
 
@@ -123,7 +125,7 @@ article > article:nth-of-type(6) {
 }
 
 article > article:nth-of-type(6) div {
-    height: 185px;
+    height: 195px;
     overflow-y: scroll;
 }
 
@@ -135,12 +137,7 @@ article > article:nth-of-type(6) div h2:nth-of-type(1) {
     margin-top: 0px;
 }
 
-article > article p {
-    font-family: Gilroy;
-}
-
 article > article h2 {
-    font-family: Gilroy;
     margin-bottom: 10px;
 }
 
@@ -153,28 +150,27 @@ div > div > article {
 }
 
 h1 {
-    font-family: Gilroy;
     font-weight: 700;
     font-size: 47pt;
     text-transform: uppercase;
     text-align: center;
     color: white;
     margin-bottom: 20px;
+    line-height: 72px;
 }
 
 div h1 + p {
-    font-family: Gilroy;
     font-weight: 300;
     text-align: center;
     color: white;
     font-size: 16pt;
     margin-bottom: 40px;
+    line-height: 28px;
 }
 
 div h1 + p + div {
     background-color: #F18701;
     padding: 20px 40px;
-    font-family: Gilroy;
     font-weight: 400;
     text-align: center;
     font-size: 16pt;
@@ -183,6 +179,7 @@ div h1 + p + div {
     border-radius: 20px;
     margin-bottom: 40px;
     cursor: pointer;
+    line-height: 28px;
 }
 
 div h1 + p + div:hover {
@@ -244,7 +241,6 @@ aside > div.empty {
     text-align: center;
     color: white;
     border-radius: 10px;
-    font-family: Gilroy;
 }
 
 aside > div.empty:hover {
@@ -255,12 +251,12 @@ aside > div.empty:hover {
 }
 
 aside > p {
-    font-family: Gilroy;
     font-weight: 700;
     color: #383851;
     margin: 0px 10px 30px 10px;
     width: auto;
     text-align: center;
+    line-height: 20px;
 }
 
 body > div.empty:nth-of-type(3) {
@@ -275,7 +271,7 @@ body > div.empty:nth-of-type(3) {
     text-align: center;
     color: white;
     border-radius: 10px;
-    font-family: Gilroy;
+    line-height: 20px;
 }
 
 body > div.empty:nth-of-type(3):hover {

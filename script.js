@@ -71,7 +71,7 @@ var dragDivOneEnd = function() {
     jassenPlaceholder.src="Images/Jasjes.png";
     aside.classList.toggle('openAside');
     asideButton.classList.toggle('openButton');
-    articleWrapper.style.bottom = "-1614px";
+    articleWrapper.style.bottom = "-1598px";
     articleOne.classList.add('articleZichtbaar');
     asideDivTwo.classList.remove('invisible');
     asideDivThree.classList.remove('invisible');
@@ -98,7 +98,7 @@ var dragDivTwoEnd = function() {
     hekkenPlaceholder.src="Images/Hekken.png";
     aside.classList.toggle('openAside');
     asideButton.classList.toggle('openButton');
-    articleWrapper.style.bottom = "-1330px";
+    articleWrapper.style.bottom = "-1331px";
     articleOne.classList.remove('articleZichtbaar');
     articleTwo.classList.add('articleZichtbaar');
 }
@@ -147,7 +147,7 @@ var dragDivFourEnd = function() {
     jasjesLeegPlaceholder.src="Images/Jasjes_leeg.png";
     aside.classList.toggle('openAside');
     asideButton.classList.toggle('openButton');
-    articleWrapper.style.bottom = "-640px";
+    articleWrapper.style.bottom = "-650px";
     articleThree.classList.remove('articleZichtbaar');
     articleFour.classList.add('articleZichtbaar');
     asideDivFive.classList.remove('invisible');
