@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    width: 1440px;
+    height: 800px;
+}
+
+.originalImage {
+    background-image: url(Images/Aarsman2905b.jpg);
+    background-position: top center;
+    background-size: cover;
+    transition: background-image 0.2s ease-in-out;
+}
+
+body > div:nth-of-type(1) {
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(84,84,84,.15), rgba(56,56,81,.9));
+}
+
+div > div {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100%;
+}
+
+.goDown {
+    animation: goDown ease 2s forwards;
+}
+
+@keyframes goDown {
+    0% {
+        bottom: 0;
+        opacity: 1;
+        display: block;
+    }
+    
+    100% {
+        bottom: -370px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+.goAway {
+    animation: goAway ease 2s forwards;
+}
+
+@keyframes goAway {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.emptyBackground {
+    background-image: url(Images/Background_empty.jpg);
+    background-position: top center;
+    background-size: cover;
+    transition: background-image 1.5s ease;
+}
+
+body > article {
+    z-index: 10;
+    position: fixed;
+    bottom: -1830px;
+    left: 50px;
+    width: 425px;
+    transition: bottom 1.2s ease;
+}
+
+article > article {
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.articleZichtbaar {
+    opacity: 1;
+    transition: opacity 1.2s ease;
+}
+
+article > article:nth-of-type(3) {
+    height: 200px;
+}
+
+article > article:nth-of-type(3) p {
+    height: 160px;
+    overflow-y: scroll;
+}
+
+article > article:nth-of-type(6) {
+    height: 200px;
+}
+
+article > article:nth-of-type(6) div {
+    height: 185px;
+    overflow-y: scroll;
+}
+
+article > article:nth-of-type(6) div h2 {
+    margin-top: 20px;
+}
+
+article > article:nth-of-type(6) div h2:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+article > article p {
+    font-family: Gilroy;
+}
+
+article > article h2 {
+    font-family: Gilroy;
+    margin-bottom: 10px;
+}
+
+div > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+}
+
+h1 {
+    font-family: Gilroy;
+    font-weight: 700;
+    font-size: 47pt;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+div h1 + p {
+    font-family: Gilroy;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-size: 16pt;
+    margin-bottom: 40px;
+}
+
+div h1 + p + div {
+    background-color: #F18701;
+    padding: 20px 40px;
+    font-family: Gilroy;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+div h1 + p + div:hover {
+    background-color: #E68100;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+figure > img {
+    position: fixed;
+}
+
+figure > img:nth-of-type(1) {
+    top: 109px;
+    left: 382px;
+    width: 776px;
+}
+
+figure > img:nth-of-type(2) {
+    top: 0px;
+    left: 330px;
+    width: 604px;
+}
+
+figure > img:nth-of-type(3) {
+    top: -2px;
+    left: 70px;
+    width: 506px;
+}
+
+figure > img:nth-of-type(4) {
+    top: 365px;
+    left: 652px;
+    width: 225px;
+}
+
+figure > img:nth-of-type(5) {
+    top: 177px;
+    left: 917px;
+    width: 97px;
+}
+
+
+aside {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -170px;
+    background-color: white;
+    width: 150px;
+    transition: right .5s ease;
+}
+
+aside > div.empty {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #F18701;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-family: Gilroy;
+}
+
+aside > div.empty:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6); 
+    transition: box-shadow .5s ease, background-color .5s ease;
+    background-color: darkred;
+}
+
+aside > p {
+    font-family: Gilroy;
+    font-weight: 700;
+    color: #383851;
+    margin: 0px 10px 30px 10px;
+    width: auto;
+    text-align: center;
+}
+
+body > div.empty:nth-of-type(3) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: auto;
+    margin: 50px;
+    padding: 20px 5px;
+    background-color: #383851;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-family: Gilroy;
+}
+
+body > div.empty:nth-of-type(3):hover {
+    background-color: #2C2C40;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+
+#asideButton {
+    width: 20px;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 45%;
+    bottom: 50%;
+    right: -20px;
+    border-radius: 10px 0px 0px 10px;
+    transition: right .5s ease;
+    cursor: pointer;
+}
+
+.openAside {
+    right: 0px!important;
+}
+
+.openButton {
+    right: 150px !important;
+}
+
+.blinking {
+    display: block !important;
+    animation: blinking 2.5s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: .2;
+    }
+
+    50% {
+        opacity: .8;
+    }
+    
+    100% {
+        opacity: .2;
+    }
+}
+
+.invisible {
+    display: none;
+}
